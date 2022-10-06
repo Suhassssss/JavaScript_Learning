@@ -1,0 +1,15 @@
+        console.log("Suhas Raosaheb Lawate");
+        console.log("Hobbies");
+        console.log("1:- Travelling");
+        console.log("2:- Swimming");
+        console.log("3:- Watching Action Movies");
+        console.info("Strengths:-");
+        console.info(" 1: I am hard working.");
+        console.info(" 2: I have ability to work overtime."); 
+        console.info("3: I have problem solving ability.");
+        console.warn("Weakness:- ");
+        console.warn("1: Nervousness about public speaking. ");
+        console.warn("2: Scare to take big risk. ");
+        console.warn("3: Tendancy to take to much responsibilities.");
+        console.log(30+50);
+        console.log(49*479);

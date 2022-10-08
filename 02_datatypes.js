@@ -1,0 +1,10 @@
+var p_name = "Prashant";
+var age = 22;
+var city = "Pune";
+var married_status = false;
+var my_variable = null;
+value_type = typeof age;
+console.log(value_type);
+console.log(typeof 31);
+console.log(typeof "Suhas", typeof married_status);
+console.log(typeof my_variable);

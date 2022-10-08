@@ -1,0 +1,11 @@
+console.log("=======_Que.1_=======");
+var name = "Suhas", mobile = 7030889775, is_married = false;
+console.log("Name:",name,"  |  Data type: ",typeof name);
+console.log("Mobile:",mobile," |  Data type: ",typeof mobile);
+console.log("Is married:",is_married,"  |  Data type: ",typeof is_married);
+console.log(" ");
+console.log("=======_Que.2_=======");
+var undefined_var;
+var null_var = null;
+console.log(undefined_var);
+console.log(null_var);

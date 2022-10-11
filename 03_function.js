@@ -28,3 +28,9 @@ function addition(arg1, arg2, arg3) {
     console.log(arg1);    
 }
 addtion(200, 300, 600);
+function test(arg1, arg2) {
+    console.log(arg1,arg2);
+    return "Sachin";
+}
+var val = test(23,45,62);
+console.log(val);

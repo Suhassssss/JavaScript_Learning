@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        
+        .calculator{
+            width: 50vw;
+            padding: 2vw;
+            padding-top: 0px;
+            border: 0.3vw solid black;
+            margin-top: 15vh;
+            margin-left: 22vw;
+
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            justify-content: space-around;
+            width: 50vw;
+            height: 7vh;
+        }
+
+        .container2 {
+            justify-content: center;
+            column-gap: 1vw;
+        }
+
+        .num_input {
+            text-align: center;
+            width: 14vw;
+            height: 4vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.1vw;
+        }
+
+        .operation_btn {
+            width: 8vw;
+            height: 4vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.1vw;
+        }
+
+        .reset_btn {
+            width: 35vw;
+            height: 4vh;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.3vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <form>
+            <table>
+                <caption><h1>Calculator</h1></caption>
+                <tbody>
+                    <tr><td><hr></td></tr>
+                    <tr>
+                        <td class="container">
+                            <span class="flex-item-1"><input class="num_input" type="number"
+                                    placeholder="Number 1"></span>
+                            <span class="flex-item-2">+</span>
+                            <span class="flex-item-3"><input class="num_input" type="number"
+                                    placeholder="Number 2"></span>
+                            <span class="flex-item-4">=</span>
+                            <span class="flex-item-5"><input class="num_input" type="number" placeholder="Result"
+                                    readonly></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="container container2">
+                            <span class="flex-item-1"><input class="operation_btn" type="button"
+                                    value="Addition"></span>
+                            <span class="flex-item-2"><input class="operation_btn" type="button"
+                                    value="Substraction"></span>
+                            <span class="flex-item-3"><input class="operation_btn" type="button"
+                                    value="Multiplication"></span>
+                            <span class="flex-item-4"><input class="operation_btn" type="button"
+                                    value="Division"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="container">
+                            <span class="flex-item-1"><input class="reset_btn" type="reset" value="Clear"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

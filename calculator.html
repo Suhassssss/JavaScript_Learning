@@ -21,7 +21,6 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-
             justify-content: space-around;
             width: 50vw;
             height: 7vh;
@@ -45,6 +44,7 @@
             height: 4vh;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 1.1vw;
+            box-shadow: 0.3vh 0.3vh 0.3vh 0.3vh red; 
         }
 
         .reset_btn {
@@ -54,6 +54,20 @@
             font-size: 1.3vw;
         }
     </style>
+    <script>
+        function changeSignPlus(id) {
+                id.innerHTML = "+";
+            }
+            function changeSignSubstract(id) {
+                id.innerHTML = "-";
+            }
+            function changeSignMultiply(id) {
+                id.innerHTML = "*";
+            }
+            function changeSignDivision(id) {
+                id.innerHTML = "/";
+            }
+    </script>
 </head>
 
 <body>
@@ -67,7 +81,7 @@
                         <td class="container">
                             <span class="flex-item-1"><input class="num_input" type="number"
                                     placeholder="Number 1"></span>
-                            <span class="flex-item-2">+</span>
+                            <span id="sign" class="flex-item-2">+</span>
                             <span class="flex-item-3"><input class="num_input" type="number"
                                     placeholder="Number 2"></span>
                             <span class="flex-item-4">=</span>
@@ -78,13 +92,13 @@
                     <tr>
                         <td class="container container2">
                             <span class="flex-item-1"><input class="operation_btn" type="button"
-                                    value="Addition"></span>
+                                onclick="changeSignPlus(sign)" value="Addition"></span>
                             <span class="flex-item-2"><input class="operation_btn" type="button"
-                                    value="Substraction"></span>
+                                onclick="changeSignSubstract(sign)"    value="Substraction"></span>
                             <span class="flex-item-3"><input class="operation_btn" type="button"
-                                    value="Multiplication"></span>
+                                onclick="changeSignMultiply(sign)"    value="Multiplication"></span>
                             <span class="flex-item-4"><input class="operation_btn" type="button"
-                                    value="Division"></span>
+                                onclick="changeSignDivision(sign)"    value="Division"></span>
                         </td>
                     </tr>
                     <tr>

@@ -2,23 +2,12 @@ console.log("Que.1____Total_number_of_vowels_using_includes()____");
 var givenString = "Good Morning IT Champ";
 console.log(`  Given String: "${givenString}"`);
 var strLowerCase = givenString.toLowerCase();
+var vowel = "aeiou";
 var charAt;
 var count = 0;
 for (let index = 0; index < givenString.length; index++) {
-    charAt = strLowerCase.charAt(index);
-    if (charAt.includes("a")) {
-        count++;
-    }
-    if (charAt.includes("e")) {
-        count++;
-    }
-    if (charAt.includes("i")) {
-        count++
-    }
-    if (charAt.includes("o")) {
-        count++;
-    }
-    if (charAt.includes("u")) {
+    char = strLowerCase.charAt(index);
+    if (vowel.includes(char)) {
         count++;
     }
 }
@@ -97,3 +86,27 @@ function evenChars(arg) {
 evenChars("Hard work always pays back");
 console.log('---------------------------------------');
 evenChars("Soon I will be Angular IT Champ");
+
+
+
+
+
+
+
+
+
+
+
+console.log("============================");
+function evenPositionedChars(myString){
+    for (let index = 0; index < myString.length; index++) {
+       // console.log(index%2==0);
+       var chh = myString.charAt(index);
+       if (index%2==0 && chh!=" ") {
+          console.log(chh);
+       }
+       //var chh = myString.charAt(index);
+        
+    }
+}
+evenPositionedChars("Hard work always pays back");

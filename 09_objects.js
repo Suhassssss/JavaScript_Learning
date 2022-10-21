@@ -43,3 +43,13 @@ let college = {
 
 }
 console.log(college);
+const mohitPerson = {
+    fullName: "Sachin Tendulkar",
+    age: 42,
+    "isMarried": true
+}
+console.log("=========== in operator================");
+let isAvailable = "fullName" in mohitPerson;
+console.log(isAvailable);
+console.log("city" in mohitPerson);
+console.log("===========================");

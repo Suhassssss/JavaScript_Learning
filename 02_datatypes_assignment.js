@@ -9,3 +9,4 @@ var undefined_var;
 var null_var = null;
 console.log(undefined_var);
 console.log(null_var);
+console.log(typeof null_var);

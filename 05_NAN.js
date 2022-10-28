@@ -10,7 +10,7 @@ console.log(myAgeInNumber, typeof myAgeInNumber);
 
 var myName = "TEST";
 console.log(typeof myName);
-var myNameString =  +myName
+var myNameString =  +myName;
 console.log(myNameString, typeof myNameString);
 var operand1 = 100;
 var operand2 = 200;

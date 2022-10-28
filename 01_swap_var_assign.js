@@ -1,4 +1,5 @@
-var sweety = "Sweety", cutie = "Cutie", temp, num1 = 100, num2 = 200, num3 = 300;
+var sweety = "Sweety", cutie = "Cutie", temp,
+num1 = 100, num2 = 200, num3 = 300;
 temp = sweety;
 console.log("Strings before swapping...");
 console.log(sweety,cutie);

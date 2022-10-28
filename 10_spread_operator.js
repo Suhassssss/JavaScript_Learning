@@ -19,10 +19,8 @@ console.log(student.age, person.age);
 student.address.street = "Khav Galli";
 console.log(student.address.street);
 console.log(person.address.street);
-
 console.table(person);
 console.table(student);
-
 
 
 

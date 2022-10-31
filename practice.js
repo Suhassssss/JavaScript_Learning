@@ -1,4 +1,4 @@
-const array = "This is a simple program for encryption and decryption...";
+const array = "Suhas Raosaheb Lawate...";
 console.log("========== Original String ==========");
 console.log(array);
 const arrayLength = array.length;

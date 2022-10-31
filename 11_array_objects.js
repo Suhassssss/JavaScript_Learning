@@ -19,6 +19,7 @@ for (let index = 0; index < array.length; index++) {
         console.log(` ${element.fullName} ${element.city} ${element.age} ${element.gender}`);    
     }
 }
+
 // let bank_sbi = {
 //     bank_name:"State Bank Of India",
 //     Manager_name:"S.S.Patil",

@@ -1,0 +1,14 @@
+const arrayOfNames = ["Kamat", "Memon", "Nashpati", "Taimur", "Menon", "Kamat", "Andy", "Taimur"];
+console.log("========== Given Array ===========");
+console.table(arrayOfNames);
+console.log(" ");
+console.log("========== Remove duplicate elements ===========");
+const arrayOfNames2 = [...new Set(arrayOfNames)];
+console.log(arrayOfNames2);
+console.log(" ");
+console.log("========== Count of removed duplicate elements ===========");
+let lengthRemovedElements = arrayOfNames.length - arrayOfNames2.length;
+console.log("Count of duplicate elements removed is: ",lengthRemovedElements);
+console.log(" ");
+console.log("========== Total number of Unique elements after removing duplicates ===========");
+console.log("Count of unique elements: ", arrayOfNames2.length);

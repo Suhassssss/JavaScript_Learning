@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <h1>Understanding Session Storage</h1>
+    <p id="getItem"></p>
+    <script>
+        window.sessionStorage.setItem("Sachin","Mumbai");
+        window.sessionStorage.setItem("Annu","Sangola");
+        window.sessionStorage.setItem("Kashi","Pandharpur");
+        window.sessionStorage.setItem("Emran","Pune");
+        // window.sessionStorage.removeItem("Kashi");
+        // console.log(window.sessionStorage.getItem("Sachin").length);
+        // var length = window.sessionStorage.getItem("Sachin").length;
+        // document.getElementById("getItem").innerHTML = "Using getItem and length property the legnth of "+ window.sessionStorage.getItem("Sachin") + ": "+ length;
+        // window.sessionStorage.clear();
+        console.log("Sachin: ", window.sessionStorage.getItem("Sachin"));
+        console.log("Annu: ", window.sessionStorage.getItem("Annu"));
+        console.log("Kashi: ", window.sessionStorage.getItem("Kashi"));
+        console.log("Emran: ", window.sessionStorage.getItem("Emran"));
+        console.log(`Length of ${window.sessionStorage.getItem("Sachin")}: ${window.sessionStorage.getItem("Sachin").length}`);
+        // window.sessionStorage.clear();
+    </script>
+</body>
+</html>

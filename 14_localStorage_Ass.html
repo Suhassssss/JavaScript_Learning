@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Understanding Local Storage</h1>
+    <p id="getItem"></p>
+    <script>
+        window.localStorage.setItem("Sachin","Mumbai");
+        window.localStorage.setItem("Annu","Sangola");
+        window.localStorage.setItem("Kashi","Pandharpur");
+        window.localStorage.setItem("Emran","Pune");
+        console.log("Sachin: ", window.localStorage.getItem("Sachin"));
+        console.log("Annu: ", window.localStorage.getItem("Annu"));
+        console.log("Kashi: ", window.localStorage.getItem("Kashi"));
+        console.log("Emran: ", window.localStorage.getItem("Emran"));
+        console.log(`Length of ${window.localStorage.getItem("Kashi")}: ${window.localStorage.getItem("Kashi").length}`);
+        // window.localStorage.clear();
+    </script>
+</body>
+</html>

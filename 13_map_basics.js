@@ -74,6 +74,6 @@ mapOfPersons.set(44, personBill);
 let mapKeys = mapOfPersons.keys(); // 22   33   44
 for (const key of mapKeys) {
      let personObject = mapOfPersons.get(key);
-     personObject.details();
+     console.log(personObject);
 
 }

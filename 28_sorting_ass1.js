@@ -1,0 +1,46 @@
+'use strict'
+console.log("");
+console.log("------------------------- Suhas Lawate ----------------------------");
+console.log("");
+console.log("------------------ 5-Nov-2022 Assignment No.9 ---------------------");
+const array_roll_numbers = [113,45,11,32,45,109,799,56,45];
+console.log("");
+console.log(`  Given Array: [ ${array_roll_numbers[0]}, ${array_roll_numbers[1]}, ${array_roll_numbers[2]}, ${array_roll_numbers[3]}, ${array_roll_numbers[4]}, ${array_roll_numbers[5]}, ${array_roll_numbers[6]}, ${array_roll_numbers[7]}, ${array_roll_numbers[8]} ]`);
+console.log("");
+console.log("------------------ Q.1 Reverse Array --------------------");
+const reverseArray = [...array_roll_numbers];
+reverseArray.reverse();
+console.log(`  Reverse Array: [ ${reverseArray[0]}, ${reverseArray[1]}, ${reverseArray[2]}, ${reverseArray[3]}, ${reverseArray[4]}, ${reverseArray[5]}, ${reverseArray[6]}, ${reverseArray[7]}, ${reverseArray[8]} ]`);
+console.log("");
+console.log("------------------ Q.2 sort() method without logic --------------------");
+const sortMethod1 = [...array_roll_numbers];
+const sortMethod2 = sortMethod1.sort();
+console.log(`  sort array: [ ${sortMethod2[0]}, ${sortMethod2[1]}, ${sortMethod2[2]}, ${sortMethod2[3]}, ${sortMethod2[4]}, ${sortMethod2[5]}, ${sortMethod2[6]}, ${sortMethod2[7]}, ${sortMethod2[8]} ]`);
+console.log("");
+console.log("------------------ Q.3 sort array in ascending order --------------------");
+const sortAsc = sortMethod1.sort((first,second) => {
+    return (first>second ? 1: -1);
+});
+console.log(`  Ascending Sort: [ ${sortAsc[0]}, ${sortAsc[1]}, ${sortAsc[2]}, ${sortAsc[3]}, ${sortAsc[4]}, ${sortAsc[5]}, ${sortAsc[6]}, ${sortAsc[7]}, ${sortAsc[8]} ]`);
+let sortAsc2 = [...sortAsc];
+console.log("");
+console.log("------------------ Q.4 descending order without reverse() --------------------");
+const sortDesc = sortMethod1.sort((first,second) => {
+    return (first>second ? -1: 1);
+});
+console.log(`  Descending Sort: [ ${sortDesc[0]}, ${sortDesc[1]}, ${sortDesc[2]}, ${sortDesc[3]}, ${sortDesc[4]}, ${sortDesc[5]}, ${sortDesc[6]}, ${sortDesc[7]}, ${sortDesc[8]} ]`);
+console.log("");
+console.log("------------------ Q.5 descending order using reverse() --------------------");
+sortAsc2.reverse();
+console.log(`  Descending Sort: [ ${sortAsc2[0]}, ${sortAsc2[1]}, ${sortAsc2[2]}, ${sortAsc2[3]}, ${sortAsc2[4]}, ${sortAsc2[5]}, ${sortAsc2[6]}, ${sortAsc2[7]}, ${sortAsc2[8]} ]`);
+console.log("");
+console.log("------------------ Q.6 Greatest number from array --------------------");
+sortAsc.reverse();
+console.log(`  Greatest number: ${sortAsc[sortAsc.length-1]}`);
+console.log("");
+console.log("------------------ Q.7 Smallest number from array --------------------");
+console.log(`  Smallest number: ${sortAsc[0]}`);
+let removedDuplicate = [...new Set(array_roll_numbers)];
+console.log("");
+console.log("------------------ Q.8 Remove duplicate from array --------------------");
+console.log(`  Removed Duplicates: ${removedDuplicate}`);
